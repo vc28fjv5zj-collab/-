@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-700 -1800 11800 11900" role="img" aria-label="2階平面図（写真から再作図）">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="var(--fp-line,#1d3b8f)"/></marker></defs>
+<style>
+.fl-room{fill:var(--fp-room,#ffffff)}
+.fl-wet{fill:var(--fp-wet,#e6eefb)}
+.fl-store{fill:var(--fp-store,#eef1f6)}
+.fl-balc{fill:var(--fp-balc,#f1f4f9);stroke:var(--fp-line,#1d3b8f);stroke-width:20}
+.stair{fill:var(--fp-room,#ffffff);stroke:var(--fp-line,#1d3b8f);stroke-width:20}
+.wall{fill:var(--fp-wall,#1d3b8f)}
+.win{fill:var(--fp-room,#ffffff);stroke:var(--fp-line,#1d3b8f);stroke-width:18}
+.ln-thin{stroke:var(--fp-line,#1d3b8f);stroke-width:14;fill:none}
+.ln-dash{stroke:var(--fp-muted,#7d8db5);stroke-width:10;stroke-dasharray:60 50;fill:none}
+.door-leaf{stroke:var(--fp-line,#1d3b8f);stroke-width:22;fill:none}
+.door-arc{stroke:var(--fp-line,#1d3b8f);stroke-width:10;fill:none;stroke-dasharray:40 30}
+.slide{fill:var(--fp-room,#ffffff);stroke:var(--fp-line,#1d3b8f);stroke-width:12}
+.fix{fill:none;stroke:var(--fp-line,#1d3b8f);stroke-width:14}
+.arrow{stroke:var(--fp-line,#1d3b8f);stroke-width:16}
+.dim{stroke:var(--fp-dim,#b0412e);stroke-width:9}
+.dim-tick{stroke:var(--fp-dim,#b0412e);stroke-width:18}
+.n-arrow{fill:var(--fp-wall,#1d3b8f)}
+text{font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;text-anchor:middle;fill:var(--fp-text,#16223f)}
+.t-room{font-size:300px;font-weight:700}
+.t-room-s{font-size:200px;font-weight:600}
+.t-room-n{font-size:150px;font-weight:600}
+.t-sub{font-size:190px;fill:var(--fp-muted,#7d8db5)}
+.t-sm{font-size:140px;fill:var(--fp-muted,#7d8db5)}
+.t-tag{font-size:120px;fill:var(--fp-muted,#7d8db5)}
+.t-dim{font-size:170px;fill:var(--fp-dim,#b0412e);font-variant-numeric:tabular-nums}
+.t-dim-s{font-size:120px}
+</style>
+<rect class="fl-room" x="0" y="0" width="2060" height="4770"/>
+<rect class="fl-wet" x="2060" y="-520" width="2220" height="1320"/>
+<rect class="fl-wet" x="2060" y="800" width="2220" height="1330"/>
+<rect class="fl-room" x="2060" y="2130" width="2220" height="1670"/>
+<rect class="fl-store" x="4280" y="0" width="1190" height="1850"/>
+<rect class="fl-store" x="4280" y="1850" width="1190" height="970"/>
+<rect class="fl-room" x="4280" y="2820" width="1190" height="980"/>
+<rect class="fl-room" x="5470" y="0" width="3892" height="3800"/>
+<rect class="fl-room" x="2060" y="3800" width="4110" height="970"/>
+<rect class="fl-room" x="2060" y="4770" width="3470" height="2820"/>
+<rect class="fl-store" x="5530" y="4770" width="640" height="1440"/>
+<rect class="fl-store" x="5530" y="6210" width="640" height="1380"/>
+<rect class="fl-room" x="6170" y="3800" width="3192" height="3790"/>
+<rect class="fl-balc" x="2060" y="7590" width="7302" height="910"/>
+<line class="ln-thin" x1="2060" y1="8500" x2="9362" y2="8500"/>
+<line class="ln-thin" x1="2060" y1="8440" x2="9362" y2="8440"/>
+<rect class="wall" x="-75.0" y="-75.0" width="2210.0" height="150"/>
+<rect class="wall" x="1985.0" y="-595.0" width="150" height="670.0"/>
+<rect class="wall" x="1985.0" y="-595.0" width="2370.0" height="150"/>
+<rect class="wall" x="4205.0" y="-595.0" width="150" height="670.0"/>
+<rect class="wall" x="4205.0" y="-75.0" width="2795.0" height="150"/>
+<rect class="wall" x="8650" y="-75.0" width="787.0" height="150"/>
+<rect class="wall" x="9287.0" y="-75.0" width="150" height="975.0"/>
+<rect class="wall" x="9287.0" y="2700" width="150" height="1700"/>
+<rect class="wall" x="9287.0" y="6200" width="150" height="1465.0"/>
+<rect class="wall" x="1985.0" y="7515.0" width="315.0" height="150"/>
+<rect class="wall" x="4100" y="7515.0" width="3300" height="150"/>
+<rect class="wall" x="9200" y="7515.0" width="237.0" height="150"/>
+<rect class="wall" x="1985.0" y="4695.0" width="150" height="905.0"/>
+<rect class="wall" x="1985.0" y="6800" width="150" height="865.0"/>
+<rect class="wall" x="-75.0" y="4695.0" width="2210.0" height="150"/>
+<rect class="wall" x="-75.0" y="-75.0" width="150" height="4920.0"/>
+<rect class="wall" x="2010.0" y="-50.0" width="100" height="2230.0"/>
+<rect class="wall" x="2010.0" y="750.0" width="1290.0" height="100"/>
+<rect class="wall" x="4000" y="750.0" width="330.0" height="100"/>
+<rect class="wall" x="2010.0" y="2080.0" width="1490.0" height="100"/>
+<rect class="wall" x="4250" y="2080.0" width="80.0" height="100"/>
+<rect class="wall" x="4230.0" y="-50.0" width="100" height="2920.0"/>
+<rect class="wall" x="4230.0" y="1800.0" width="1290.0" height="100"/>
+<rect class="wall" x="4230.0" y="2770.0" width="170.0" height="100"/>
+<rect class="wall" x="5370" y="2770.0" width="150.0" height="100"/>
+<rect class="wall" x="5420.0" y="-50.0" width="100" height="150.0"/>
+<rect class="wall" x="5420.0" y="1750" width="100" height="1150"/>
+<rect class="wall" x="5420.0" y="3700" width="100" height="150.0"/>
+<rect class="wall" x="1985.0" y="3725.0" width="2370.0" height="150"/>
+<rect class="wall" x="5395.0" y="3725.0" width="4042.0" height="150"/>
+<rect class="wall" x="2010.0" y="4720.0" width="1690.0" height="100"/>
+<rect class="wall" x="4500" y="4720.0" width="1080.0" height="100"/>
+<rect class="wall" x="5480.0" y="4720.0" width="740.0" height="100"/>
+<rect class="wall" x="5480.0" y="4720.0" width="100" height="160.0"/>
+<rect class="wall" x="5480.0" y="6110" width="100" height="1530.0"/>
+<rect class="wall" x="5480.0" y="6160.0" width="740.0" height="100"/>
+<rect class="wall" x="6120.0" y="3750.0" width="100" height="150.0"/>
+<rect class="wall" x="6120.0" y="4700" width="100" height="1620"/>
+<rect class="wall" x="6120.0" y="7480" width="100" height="160.0"/>
+<rect class="win" x="7000" y="-75.0" width="1650" height="150"/>
+<line class="ln-thin" x1="7000" y1="0" x2="8650" y2="0"/>
+<rect class="win" x="9287.0" y="900" width="150" height="1800"/>
+<line class="ln-thin" x1="9362" y1="900" x2="9362" y2="2700"/>
+<rect class="win" x="9287.0" y="4400" width="150" height="1800"/>
+<line class="ln-thin" x1="9362" y1="4400" x2="9362" y2="6200"/>
+<rect class="win" x="2300" y="7515.0" width="1800" height="150"/>
+<line class="ln-thin" x1="2300" y1="7590" x2="4100" y2="7590"/>
+<rect class="win" x="7400" y="7515.0" width="1800" height="150"/>
+<line class="ln-thin" x1="7400" y1="7590" x2="9200" y2="7590"/>
+<rect class="win" x="1985.0" y="5600" width="150" height="1200"/>
+<line class="ln-thin" x1="2060" y1="5600" x2="2060" y2="6800"/>
+<line class="door-leaf" x1="4500" y1="4770" x2="4500" y2="5570"/>
+<path class="door-arc" d="M3700,4770 A800.0,800.0 0 0 0 4500,5570"/>
+<text class="t-tag" x="3950" y="5450">2002-14</text>
+<line class="door-leaf" x1="6170" y1="4700" x2="6970" y2="4700"/>
+<path class="door-arc" d="M6170,3900 A800.0,800.0 0 0 1 6970,4700"/>
+<text class="t-tag" x="6750" y="4500">2002-12</text>
+<line class="door-leaf" x1="5470" y1="3700" x2="6270" y2="3700"/>
+<path class="door-arc" d="M5470,2900 A800.0,800.0 0 0 1 6270,3700"/>
+<text class="t-tag" x="6050" y="3500">2002-11</text>
+<line class="door-leaf" x1="4250" y1="2130" x2="4250" y2="2880"/>
+<path class="door-arc" d="M3500,2130 A750.0,750.0 0 0 0 4250,2880"/>
+<text class="t-tag" x="3700" y="2700">2002-13</text>
+<line class="door-leaf" x1="4000" y1="800" x2="4000" y2="1500"/>
+<path class="door-arc" d="M3300,800 A700.0,700.0 0 0 0 4000,1500"/>
+<rect class="slide" x="5420" y="100" width="35" height="885.0"/>
+<rect class="slide" x="5485" y="865.0" width="35" height="885.0"/>
+<rect class="slide" x="4400" y="2770" width="545.0" height="35"/>
+<rect class="slide" x="4825.0" y="2835" width="545.0" height="35"/>
+<polyline class="door-leaf" points="5530,4880 5310,5187.5 5530,5495.0 5310,5802.5 5530,6110"/>
+<polyline class="door-leaf" points="6170,6320 6390,6610.0 6170,6900.0 6390,7190.0 6170,7480"/>
+<rect class="fix" x="2160" y="-420" width="950" height="1120" rx="60"/>
+<rect class="fix" x="2240" y="-340" width="790" height="960" rx="140"/>
+<rect class="fix" x="2140" y="900" width="560" height="760"/>
+<ellipse class="fix" cx="2400" cy="1280" rx="170" ry="230"/>
+<rect class="fix" x="3540" y="1460" width="640" height="600"/>
+<circle class="fix" cx="3860" cy="1760" r="220"/>
+<text class="t-sm" x="3860" y="1410">洗濯機</text>
+<line class="ln-dash" x1="4280" y1="0" x2="5470" y2="1850"/>
+<line class="ln-dash" x1="5470" y1="0" x2="4280" y2="1850"/>
+<line class="ln-dash" x1="4280" y1="1850" x2="5470" y2="2820"/>
+<line class="ln-dash" x1="5470" y1="1850" x2="4280" y2="2820"/>
+<line class="ln-dash" x1="5530" y1="4770" x2="6170" y2="6210"/>
+<line class="ln-dash" x1="6170" y1="4770" x2="5530" y2="6210"/>
+<line class="ln-dash" x1="5530" y1="6210" x2="6170" y2="7590"/>
+<line class="ln-dash" x1="6170" y1="6210" x2="5530" y2="7590"/>
+<rect class="stair" x="1080" y="120" width="900" height="3030"/>
+<line class="ln-thin" x1="1080" y1="353" x2="1980" y2="353"/>
+<line class="ln-thin" x1="1080" y1="586" x2="1980" y2="586"/>
+<line class="ln-thin" x1="1080" y1="819" x2="1980" y2="819"/>
+<line class="ln-thin" x1="1080" y1="1052" x2="1980" y2="1052"/>
+<line class="ln-thin" x1="1080" y1="1285" x2="1980" y2="1285"/>
+<line class="ln-thin" x1="1080" y1="1518" x2="1980" y2="1518"/>
+<line class="ln-thin" x1="1080" y1="1752" x2="1980" y2="1752"/>
+<line class="ln-thin" x1="1080" y1="1985" x2="1980" y2="1985"/>
+<line class="ln-thin" x1="1080" y1="2218" x2="1980" y2="2218"/>
+<line class="ln-thin" x1="1080" y1="2451" x2="1980" y2="2451"/>
+<line class="ln-thin" x1="1080" y1="2684" x2="1980" y2="2684"/>
+<line class="ln-thin" x1="1080" y1="2917" x2="1980" y2="2917"/>
+<line class="arrow" x1="1530.0" y1="3000" x2="1530.0" y2="370" marker-end="url(#ah)"/>
+<text class="t-sm" x="1530.0" y="3410">DN</text>
+<text class="t-room" x="7420" y="1750">洋室③</text>
+<text class="t-sub" x="7420" y="2080">約9帖</text>
+<text class="t-room" x="3800" y="6250">洋室①</text>
+<text class="t-sub" x="3800" y="6580">約6帖</text>
+<text class="t-room" x="7770" y="5900">洋室②</text>
+<text class="t-sub" x="7770" y="6230">約7帖</text>
+<text class="t-room-s" x="3200" y="250">浴室</text>
+<text class="t-room-s" x="2900" y="1950">洗面所</text>
+<text class="t-room-s" x="3150" y="3050">ホール</text>
+<text class="t-room-s" x="4875" y="1000">押入</text>
+<text class="t-room-s" x="4875" y="2420">物入</text>
+<text class="t-room-s" x="4100" y="4380">廊下</text>
+<text class="t-room-n" x="5850" y="5560">収納</text>
+<text class="t-room-n" x="5850" y="6960">収納</text>
+<text class="t-room-s" x="540" y="1700">階段</text>
+<text class="t-room-s" x="1030" y="4200">ホール</text>
+<text class="t-room-s" x="5711" y="8130">バルコニー</text>
+<text class="t-sm" x="3200" y="7400">全開口1800</text>
+<text class="t-sm" x="8300" y="7400">全開口1800</text>
+<text class="t-sm t-rot" transform="translate(9180 1800) rotate(-90)">引違1800</text>
+<text class="t-sm t-rot" transform="translate(9180 5300) rotate(-90)">引違1800</text>
+<text class="t-sm" x="2120" y="-650" text-anchor="start" style="text-anchor:start">（520 突出）</text>
+<line class="dim" x1="0" y1="9150" x2="9362" y2="9150"/>
+<line class="dim" x1="0" y1="8550" x2="0" y2="9270"/>
+<line class="dim-tick" x1="-70" y1="9220" x2="70" y2="9080"/>
+<line class="dim" x1="2060" y1="8550" x2="2060" y2="9270"/>
+<line class="dim-tick" x1="1990" y1="9220" x2="2130" y2="9080"/>
+<line class="dim" x1="4424" y1="8550" x2="4424" y2="9270"/>
+<line class="dim-tick" x1="4354" y1="9220" x2="4494" y2="9080"/>
+<line class="dim" x1="4534" y1="8550" x2="4534" y2="9270"/>
+<line class="dim-tick" x1="4464" y1="9220" x2="4604" y2="9080"/>
+<line class="dim" x1="6898" y1="8550" x2="6898" y2="9270"/>
+<line class="dim-tick" x1="6828" y1="9220" x2="6968" y2="9080"/>
+<line class="dim" x1="7008" y1="8550" x2="7008" y2="9270"/>
+<line class="dim-tick" x1="6938" y1="9220" x2="7078" y2="9080"/>
+<line class="dim" x1="9362" y1="8550" x2="9362" y2="9270"/>
+<line class="dim-tick" x1="9292" y1="9220" x2="9432" y2="9080"/>
+<text class="t-dim" x="1030.0" y="9080">2,060</text>
+<text class="t-dim" x="3242.0" y="9080">2,364</text>
+<text class="t-dim t-dim-s" x="4479.0" y="8820">110</text>
+<text class="t-dim" x="5716.0" y="9080">2,364</text>
+<text class="t-dim t-dim-s" x="6953.0" y="8820">110</text>
+<text class="t-dim" x="8185.0" y="9080">2,354</text>
+<line class="dim" x1="0" y1="9750" x2="9362" y2="9750"/>
+<line class="dim" x1="0" y1="9200" x2="0" y2="9870"/>
+<line class="dim-tick" x1="-70" y1="9820" x2="70" y2="9680"/>
+<line class="dim" x1="9362" y1="9200" x2="9362" y2="9870"/>
+<line class="dim-tick" x1="9292" y1="9820" x2="9432" y2="9680"/>
+<text class="t-dim" x="4681.0" y="9680">9,362</text>
+<line class="dim" x1="10000" y1="-520" x2="10000" y2="7590"/>
+<line class="dim" x1="9450" y1="-520" x2="10120" y2="-520"/>
+<line class="dim-tick" x1="9930" y1="-450" x2="10070" y2="-590"/>
+<line class="dim" x1="9450" y1="0" x2="10120" y2="0"/>
+<line class="dim-tick" x1="9930" y1="70" x2="10070" y2="-70"/>
+<line class="dim" x1="9450" y1="3740" x2="10120" y2="3740"/>
+<line class="dim-tick" x1="9930" y1="3810" x2="10070" y2="3670"/>
+<line class="dim" x1="9450" y1="3850" x2="10120" y2="3850"/>
+<line class="dim-tick" x1="9930" y1="3920" x2="10070" y2="3780"/>
+<line class="dim" x1="9450" y1="7590" x2="10120" y2="7590"/>
+<line class="dim-tick" x1="9930" y1="7660" x2="10070" y2="7520"/>
+<text class="t-dim" transform="translate(9910 -260.0) rotate(-90)">520</text>
+<text class="t-dim" transform="translate(9910 1870.0) rotate(-90)">3,740</text>
+<text class="t-dim t-dim-s" transform="translate(9670 3835.0) rotate(-90)">110</text>
+<text class="t-dim" transform="translate(9910 5720.0) rotate(-90)">3,740</text>
+<line class="dim" x1="10600" y1="0" x2="10600" y2="7590"/>
+<line class="dim" x1="10050" y1="0" x2="10720" y2="0"/>
+<line class="dim-tick" x1="10530" y1="70" x2="10670" y2="-70"/>
+<line class="dim" x1="10050" y1="7590" x2="10720" y2="7590"/>
+<line class="dim-tick" x1="10530" y1="7660" x2="10670" y2="7520"/>
+<text class="t-dim" transform="translate(10510 3795.0) rotate(-90)">7,590</text>
+<line class="dim" x1="2060" y1="-1050" x2="4280" y2="-1050"/>
+<line class="dim" x1="2060" y1="-600" x2="2060" y2="-1170"/>
+<line class="dim-tick" x1="1990" y1="-980" x2="2130" y2="-1120"/>
+<line class="dim" x1="4280" y1="-600" x2="4280" y2="-1170"/>
+<line class="dim-tick" x1="4210" y1="-980" x2="4350" y2="-1120"/>
+<text class="t-dim" x="3170.0" y="-1120">2,220</text>
+<g class="north" transform="translate(8300 -1150)"><circle r="420" class="ln-thin" fill="none"/><path d="M0,-360 L170,250 L0,140 L-170,250 Z" class="n-arrow"/><text class="t-dim" y="-470">N</text></g>
+</svg>
