@@ -89,12 +89,18 @@ wall(6170, 3800, 6170, 7590, INT, [(3900, 4700), (6320, 7480)])  # 2002-12 / 収
 
 # ---------- 窓 ----------
 def window(x1, y1, x2, y2, t):
+    """引違い窓：枠＋ガラス2本（障子2枚を中央で重ねて表現）"""
+    g = t * 0.18
     if y1 == y2:
         add(f'<rect class="win" x="{x1}" y="{y1-t/2}" width="{x2-x1}" height="{t}"/>')
-        add(f'<line class="ln-thin" x1="{x1}" y1="{y1}" x2="{x2}" y2="{y1}"/>')
+        m = (x1 + x2) / 2
+        add(f'<line class="glass" x1="{x1}" y1="{y1-g}" x2="{m+60}" y2="{y1-g}"/>')
+        add(f'<line class="glass" x1="{m-60}" y1="{y1+g}" x2="{x2}" y2="{y1+g}"/>')
     else:
         add(f'<rect class="win" x="{x1-t/2}" y="{y1}" width="{t}" height="{y2-y1}"/>')
-        add(f'<line class="ln-thin" x1="{x1}" y1="{y1}" x2="{x1}" y2="{y2}"/>')
+        m = (y1 + y2) / 2
+        add(f'<line class="glass" x1="{x1-g}" y1="{y1}" x2="{x1-g}" y2="{m+60}"/>')
+        add(f'<line class="glass" x1="{x1+g}" y1="{m-60}" x2="{x1+g}" y2="{y2}"/>')
 window(7000, 0, 8650, 0, EXT)
 window(9362, 900, 9362, 2700, EXT)
 window(9362, 4400, 9362, 6200, EXT)
@@ -114,10 +120,10 @@ def door(hx, hy, cx, cy, ox, oy, tag=None, tpos=None):
     if tag:
         add(f'<text class="t-tag" x="{tpos[0]}" y="{tpos[1]}">{tag}</text>')
 
-door(4500, 4770, 3700, 4770, 4500, 5570, "2002-14", (3950, 5450))
-door(6170, 4700, 6170, 3900, 6970, 4700, "2002-12", (6750, 4500))
-door(5470, 3700, 5470, 2900, 6270, 3700, "2002-11", (6050, 3500))
-door(4250, 2130, 3500, 2130, 4250, 2880, "2002-13", (3700, 2700))
+door(4500, 4770, 3700, 4770, 4500, 5570, "2002-14", (4100, 5750))
+door(6170, 4700, 6170, 3900, 6970, 4700, "2002-12", (7350, 4250))
+door(5470, 3700, 5470, 2900, 6270, 3700, "2002-11", (6650, 3300))
+door(4250, 2130, 3500, 2130, 4250, 2880, "2002-13", (3050, 2420))
 door(4000, 800, 3300, 800, 4000, 1500)
 
 # ---------- 引戸（襖）・折戸 ----------
@@ -150,7 +156,7 @@ add('<rect class="fix" x="2140" y="900" width="560" height="760"/>')
 add('<ellipse class="fix" cx="2400" cy="1280" rx="170" ry="230"/>')
 add('<rect class="fix" x="3540" y="1460" width="640" height="600"/>')
 add('<circle class="fix" cx="3860" cy="1760" r="220"/>')
-add('<text class="t-sm" x="3860" y="1410">洗濯機</text>')
+add('<text class="t-tag" x="3860" y="1805">洗濯機</text>')
 # 押入 中段
 add('<line class="ln-dash" x1="4280" y1="0" x2="5470" y2="1850"/>')
 add('<line class="ln-dash" x1="5470" y1="0" x2="4280" y2="1850"/>')
@@ -180,8 +186,8 @@ def label(x, y, name, sub=None, cls="t-room"):
 label(7420, 1750, "洋室③", "約9帖")
 label(3800, 6250, "洋室①", "約6帖")
 label(7770, 5900, "洋室②", "約7帖")
-label(3200, 200 + 50, "浴室", cls="t-room-s")
-label(2900, 1950, "洗面所", cls="t-room-s")
+label(3700, 300, "浴室", cls="t-room-s")
+label(3050, 1330, "洗面所", cls="t-room-s")
 label(3150, 3050, "ホール", cls="t-room-s")
 label(4875, 1000, "押入", cls="t-room-s")
 label(4875, 2420, "物入", cls="t-room-s")
@@ -206,7 +212,7 @@ def dim_h(xs, y, ext_from, labels=None):
     for i in range(len(xs) - 1):
         v = labels[i] if labels else f"{xs[i+1]-xs[i]:,}"
         small = xs[i+1]-xs[i] < 400
-        add(f'<text class="t-dim{" t-dim-s" if small else ""}" x="{(xs[i]+xs[i+1])/2}" y="{y-(330 if small else 70)}">{v}</text>')
+        add(f'<text class="t-dim{" t-dim-s" if small else ""}" x="{(xs[i]+xs[i+1])/2}" y="{y+(230 if small else -70)}">{v}</text>')
 def dim_v(ys, x, ext_from, labels=None):
     add(f'<line class="dim" x1="{x}" y1="{ys[0]}" x2="{x}" y2="{ys[-1]}"/>')
     for y in ys:
@@ -242,17 +248,19 @@ STYLE = """
 .fl-balc{fill:var(--fp-balc,#f1f4f9);stroke:var(--fp-line,#1d3b8f);stroke-width:20}
 .stair{fill:var(--fp-room,#ffffff);stroke:var(--fp-line,#1d3b8f);stroke-width:20}
 .wall{fill:var(--fp-wall,#1d3b8f)}
-.win{fill:var(--fp-room,#ffffff);stroke:var(--fp-line,#1d3b8f);stroke-width:18}
-.ln-thin{stroke:var(--fp-line,#1d3b8f);stroke-width:14;fill:none}
+.win{fill:var(--fp-room,#ffffff);stroke:var(--fp-line,#1d3b8f);stroke-width:14}
+.ln-thin{stroke:var(--fp-line,#1d3b8f);stroke-width:14;fill:none;stroke-linecap:round}
 .ln-dash{stroke:var(--fp-muted,#7d8db5);stroke-width:10;stroke-dasharray:60 50;fill:none}
 .door-leaf{stroke:var(--fp-line,#1d3b8f);stroke-width:22;fill:none}
-.door-arc{stroke:var(--fp-line,#1d3b8f);stroke-width:10;fill:none;stroke-dasharray:40 30}
+.door-arc{stroke:var(--fp-line,#1d3b8f);stroke-width:9;fill:none;opacity:.75}
+.glass{stroke:var(--fp-line,#1d3b8f);stroke-width:12;fill:none}
 .slide{fill:var(--fp-room,#ffffff);stroke:var(--fp-line,#1d3b8f);stroke-width:12}
 .fix{fill:none;stroke:var(--fp-line,#1d3b8f);stroke-width:14}
 .arrow{stroke:var(--fp-line,#1d3b8f);stroke-width:16}
 .dim{stroke:var(--fp-dim,#b0412e);stroke-width:9}
 .dim-tick{stroke:var(--fp-dim,#b0412e);stroke-width:18}
 .n-arrow{fill:var(--fp-wall,#1d3b8f)}
+svg{shape-rendering:geometricPrecision;text-rendering:geometricPrecision}
 text{font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;text-anchor:middle;fill:var(--fp-text,#16223f)}
 .t-room{font-size:300px;font-weight:700}
 .t-room-s{font-size:200px;font-weight:600}
@@ -272,4 +280,9 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="-700 -1800 11800 1190
 
 here = pathlib.Path(__file__).parent
 (here / "2F-floorplan.svg").write_text(svg, encoding="utf-8")
+# index.html に埋め込んだ SVG も同期
+import re
+html = (here / "index.html").read_text(encoding="utf-8")
+html = re.sub(r"<svg xmlns=.*?</svg>", lambda m: svg, html, count=1, flags=re.S)
+(here / "index.html").write_text(html, encoding="utf-8")
 print("ok", len(svg))
